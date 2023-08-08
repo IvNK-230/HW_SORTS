@@ -6,6 +6,7 @@ import java.util.Comparator;
 public class AviaSouls {
     private Ticket[] tickets = new Ticket[0];
 
+
     private Ticket[] addToArray(Ticket[] current, Ticket ticket) {
         Ticket[] tmp = new Ticket[current.length + 1];
         for (int i = 0; i < current.length; i++) {
@@ -48,4 +49,5 @@ public class AviaSouls {
         Arrays.sort(result, comparator);
         return result;
     }
+
 }
